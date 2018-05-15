@@ -1,0 +1,26 @@
+/* CURRENTLY IN: styles/main.css */
+
+main {
+  padding-top: 5rem;
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.nav.nav-pills {
+	padding-bottom: 2rem;
+}
+
+.nav.nav-pills  span {
+	cursor: pointer;
+}
+
+.nav-pagination {
+	padding-top: 3rem;
+}
+
+.modal {
+	max-width: 1000px;
+}

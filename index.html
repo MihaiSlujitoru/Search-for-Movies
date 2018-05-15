@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Search for Movies</title>
+    <!--<link rel='stylesheet' href='styles/reset.css'>-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel='stylesheet' href='styles/main.css'>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Search for Movies</a>
+
+		<form class="form-inline my-2 my-lg-0 ml-auto" id='searchForm'>
+			<input class="form-control mr-sm-2 js-search-query" type="text" placeholder="Search" aria-label="Search" required>
+			<button class="btn btn-outline-success my-2 my-sm-0 js-submit" type="submit">Search ...</button>
+		</form>
+	</nav>	
+
+	<div class="starter-template">
+		<main role="main" class="container">
+			<nav class="nav nav-pills nav-justified js-navigation">		
+				<span class="nav-item nav-link active" data-type="now_playing">Now Playing</span>
+				<span class="nav-item nav-link" data-type="popular">Popular Movies</span>
+				<span class="nav-item nav-link" data-type="top_rated">Top Rated Movies</span>
+				<span class="nav-item nav-link" data-type="upcoming">Upcoming Movies</span>
+			</nav>			
+			<div class="row js-content">
+
+			</div>
+			<nav class='nav-pagination'>
+				<ul class="pagination js-pagination">
+				</ul>
+			</nav>	      
+		</main>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.1/jquery.twbsPagination.js"></script>
+
+    <script src='javascript/app.js'></script>
+</body>
+</html>
